@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hospital Website</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Aamir Central Hospital</h1>
+    <div class="top-bar">
+      <input type="text" id="search" placeholder="Search doctors...">
+      <nav>
+        <a href="#">Support</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hospital Info Card -->
+  <section class="hospital-info">
+    <img src="https://archi-monarch.com/wp-content/uploads/2022/09/VASTU-FOR-HOSPITAL.webp" alt="Hospital Building">
+    <div>
+      <h2>Welcome to Aamir Central Hospital</h2>
+      <p>
+        <i>We are a multi-specialty hospital providing high-quality medical services for over 20 years.
+        Our emergency department is open 24/7 with fully equipped ambulance services.</i> 
+      </p>
+      <p><strong>Emergency Hotline:</strong> +91 9661621325</p>
+      <p><strong>Email:</strong> aamirsohail0523@gmail.com</p>
+      <p><strong>Address:</strong> Sant Nagar, Ashoka Garden, Bhopal 462023</p>
+    </div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section id="doctors-container" class="doctors-container"></section>
+
+  <!-- Appointment Form Modal -->
+  <div id="appointment-form" class="modal">
+    <div class="modal-content">
+      <span onclick="closeForm()" class="close-button">&times;</span>
+      <h2>Book Appointment</h2>
+      <form id="appointmentForm">
+        <input type="text" id="patientName" placeholder="Your Name" required />
+        <input type="date" id="appointmentDate" required />
+        <input type="time" id="appointmentTime" required />
+        <input type="hidden" id="doctorIndex" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
