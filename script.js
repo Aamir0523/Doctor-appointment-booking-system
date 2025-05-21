@@ -150,3 +150,11 @@ document.getElementById("search").addEventListener("input", function(e) {
 });
 
 renderDoctors();
+// adding this lines of code for flip cards
+document.querySelectorAll('.flip-card-back form').forEach(form => {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thank you for your interest! We will get back to you soon.');
+    form.reset();
+  });
+});
