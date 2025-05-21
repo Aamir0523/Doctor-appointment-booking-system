@@ -40,13 +40,13 @@ header {
 .hospital-info {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(24, 171, 174);
+  background-color:#f4f4f4;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   margin: 20px;
-  color: white;
+  color: black;
   border-radius: 12px;
-  background-image: url('https://t4.ftcdn.net/jpg/02/70/03/15/360_F_270031550_NF8Sr62AOYMEMf2UMKUlkJ6GMO5gDU9R.jpg');
+  background-image: url('ttps://t4.ftcdn.net/jpg/02/70/03/15/360_F_270031550_NF8Sr62AOYMEMf2UMKUlkJ6GMO5gDU9R.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -60,15 +60,15 @@ header {
 }
 
 .hospital-info div {
-  padding: 10px;
+  padding:10px;
 }
 
 .doctors-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  background-color: #f9f9f9;
+  gap: 30px;
+  padding: 30px;
+  background-color: #f4f4f4;
   border-radius: 10px;
 }
 
@@ -86,7 +86,7 @@ header {
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 
 .card img {
@@ -153,4 +153,181 @@ header {
 }
 .card:hover{
     background-color: lightslategrey;
+}
+/* 3rd part*/
+
+.features-section {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: #f4f4f4;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  backface-visibility: hidden;
+  border-radius: 12px ;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+.flip-card-front {
+  background-color:whitesmoke;
+  color: black;
+  background-image: url();
+}
+
+.flip-card-back {
+  background-color: rgb(201, 200, 200);
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flip-card-back input, 
+.flip-card-back button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+}
+
+.flip-card-back button {
+  background-color: #ff6600;
+  color: white;
+  cursor: pointer;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  background-color: #fff;
+  padding: 60px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.testimonial-text {
+  flex: 1;
+  font-size: 20px;
+}
+
+.testimonial-text h4 {
+  margin-top: 20px;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.testimonial-image img {
+  max-width: 400px;
+  border-radius: 12px;
+}
+/*footer css code*/
+.site-footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  border-top: 1px solid #ccc;
+}
+.footer-container {
+    background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-column {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-column ul li a {
+  text-decoration: none;
+  color: #555;
+  line-height: 1.8;
+  transition: color 0.3s;
+}
+.footer-column ul li a:hover {
+  color: #000;
+}
+.app-links img {
+  height: 40px;
+  margin: 5px 10px 0 0;
+}
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+.footer-bottom a {
+  color: #555;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.footer-bottom a:hover {
+  color: #000;
+}
+.button-3{
+  text-align: center;
+  margin-top: 40%;
+  font-size: 50px;
+  padding: 15px 30px;
+
 }
