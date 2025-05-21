@@ -17,8 +17,7 @@
       </nav>
     </div>
   </header>
-
-  <!-- Hospital Info Card -->
+  <!-- Hospital card Information section -->
   <section class="hospital-info">
     <img src="https://archi-monarch.com/wp-content/uploads/2022/09/VASTU-FOR-HOSPITAL.webp" alt="Hospital Building">
     <div>
@@ -32,11 +31,9 @@
       <p><strong>Address:</strong> Sant Nagar, Ashoka Garden, Bhopal 462023</p>
     </div>
   </section>
-
   <!-- Doctors Section -->
   <section id="doctors-container" class="doctors-container"></section>
-
-  <!-- Appointment Form Modal -->
+  <!-- Appointment Form ke liye -->
   <div id="appointment-form" class="modal">
     <div class="modal-content">
       <span onclick="closeForm()" class="close-button">&times;</span>
@@ -50,7 +47,120 @@
       </form>
     </div>
   </div>
+  <!--support section-->
+  <section class="features-section">
+  <div class="feature-cards-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>Customer Support</h3>
+          <p>Drop your contact detail we will reach you shortly</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>Your Detail</h4>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+     <!-- 2nd wale flip card section -->
+     <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>Emergency</h3>
+          <p>For Emergency Contact Numbe 
+              +91 9661621325</p>
+        </div>
+        <div class="flip-card-back">
+           <button class="button-3" type="button"> Call Us </button>
+        </div>
+      </div>
+    </div>
+      <!--3rd card div-->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>ReviewMinder</h3>
+          <p>Manage your online reputation efficiently.</p>
+        </div>
+        <div class="flip-card-back">
+          <h4>ReviewMinder</h4>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" id="mobile" pattern="[0-9]{10}" placeholder="mobile number" required>
+            <input type="text" placeholder="email" >
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- We can add more cards similarly -->
+  </div>
+</section>
 
+<!-- Contact/Testimonial Section -->
+<section class="testimonial-section">
+  <div class="testimonial-container">
+    <div class="testimonial-text">
+      <p>"The booking page is easy to navigate, both on desktop and mobile. Their system helped increase our direct bookings by 10%!"</p>
+      <h4> AAMIR CENTRAL HOSPITAL<br><span>India</span></h4>
+      <button class="contact-button">Contact</button>
+    </div>
+    <div class="testimonial-image">
+      <img src="https://www.mapcommunications.com/wp-content/uploads/2020/07/bigstock-Smiling-Receptionist-At-The-Cl-136924850.jpg" alt="Reception">
+    </div>
+  </div>
+</section>
+
+<!--Footer Section-->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Product</h3>
+      <ul>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Enterprise</a></li>
+        <li><a href="#">Business App</a></li>
+        <li><a href="#">System Status</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Solutions</h3>
+      <ul>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Online Booking</a></li>
+        <li><a href="#">Payments</a></li>
+        <li><a href="#">POS</a></li>
+        <li><a href="#">Reminders</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="dbdhhjsj">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>App Downloads</h3>
+      <p>Free for Android and iOS platforms.</p>
+      <div class="app-links">
+        <a href="#"><img src="https://developer.apple.com/news/images/og/app-store-og.png" alt="App Store" /></a>
+        <a href="#"><img src="https://m-cdn.phonearena.com/images/article/141194-wide-two_1200/Changes-to-Google-Play-Store-logo-are-spotted.jpg" alt="Google Play" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Aamir Central Hospital. All rights reserved.</p>
+    <p><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Cookies</a></p>
+  </div>
+</footer>
   <script src="script.js"></script>
 </body>
 </html>
